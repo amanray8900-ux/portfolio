@@ -12,7 +12,7 @@ export const projects = [
     accentColor: '#8b5cf6',
     team: 'Team of 4 — Aman Ray, Radhika Dhama, Sania Rawat, Aarushi Kumar',
     tags: ['Python', 'Scikit-learn', 'LOF', 'Embeddings', 'Anomaly Detection', 'ML Engineering'],
-    github: 'https://github.com/amanray8900-ux/Selective-Verification-Framework',
+    github: null,
     summary: 'A production-grade verification layer built on top of a 41-class document classifier. Instead of blindly trusting every DL prediction, the framework runs each output through three sequential checks — routing uncertain or out-of-distribution inputs to a safe "Others" bucket rather than producing a confident wrong answer.',
 
     problem: 'A deep learning classifier correctly categorizes PDFs into 41 document types, but has a critical design flaw: it has no concept of "unknown." Feed it a completely unrelated document and it confidently misfiles it into one of the 41 categories. Additionally, some in-distribution documents were being misclassified. Two failure modes required solving simultaneously, without modifying the DL model itself: (1) out-of-distribution inputs receiving confident wrong labels, and (2) in-distribution inputs being misfiled.',
@@ -82,7 +82,7 @@ export const projects = [
     accentColor: '#3b82f6',
     team: 'Aman Ray & Radhika Dhama · Mentored by Bhushan Deshpande & Sudhir Kumar · Coriolis Technologies',
     tags: ['PyTorch', 'Hugging Face', 'PEFT/LoRA', 'Whisper', 'SNAC Codec', 'Transformers', 'W&B'],
-    github: 'https://github.com/amanray8900-ux/Hindi-TTS-Orpheus',
+    github: null,
     summary: 'Built an end-to-end Hindi speech synthesis system by fine-tuning the Orpheus-3B LLM — framing speech generation as causal next-token prediction over SNAC audio codecs. Three progressive training stages tackled pronunciation alignment, speaker identity stability, and emotional expressiveness, reducing WER from 92.4% to 30.9%.',
 
     problem: 'Hindi (600M+ speakers) has a critical gap in open-source, expressive TTS. Closed APIs (Google, Azure) produce flat, robotic speech at high cost. Open-source alternatives (VITS, Coqui) lack emotional control and require full retraining for new languages. The challenge: adapt an English-centric 3B-parameter LLM for high-quality Hindi synthesis with speaker identity and emotion control — without training from scratch.',
@@ -292,7 +292,7 @@ export const projects = [
     accentColor: '#f59e0b',
     team: 'Solo project',
     tags: ['Python', 'Scikit-learn', 'Decision Tree', 'Naive Bayes', 'Feature Engineering', 'SMOTE'],
-    github: 'https://github.com/amanray8900-ux/Pre-Release-Box-Office-Prediction',
+    github: 'https://github.com/amanray8900-ux/Pre-Release-Box-Office-Prediction-and-Risk-Analysis',
     summary: 'Binary classification (Hit/Flop) for Bollywood movies using only pre-release features — genre, director, cast, franchise status, remake status, budget. Optimized for flop recall (risk mitigation) over accuracy. A tuned Decision Tree transformed from severely overfit (42% flop recall) to highly generalized (88% flop recall) through hyperparameter tuning.',
 
     problem: 'Film investors face asymmetric risk: the financial loss from a flop vastly exceeds the opportunity cost of missing a hit. A useful prediction system must use only genuinely pre-release information — "Number of Screens" and "Revenue" both cause data leakage, despite being in the dataset. The model must learn from director track records, cast experience, and creative attributes alone.',
@@ -358,7 +358,7 @@ export const projects = [
     accentColor: '#f43f5e',
     team: 'Solo project',
     tags: ['Python', 'Scikit-learn', 'XGBoost', 'Random Forest', 'EDA', 'KNN Imputer'],
-    github: 'https://github.com/amanray8900-ux/Georgian-Used-Car-Price-Prediction',
+    github: 'https://github.com/amanray8900-ux/Georgian_used_car_price_prediction',
     summary: 'End-to-end regression pipeline on a Kaggle dataset of Georgian used cars. Involved heavy data cleaning (string-encoded numerics, massive outliers, 313 duplicates), systematic outlier removal experimentation across three strategies, comprehensive EDA, KNN imputation for missing values, and comparison of 5 ML models — achieving the target of R² > 0.75 and MAE < 5,000.',
 
     problem: 'The dataset contained significant data quality issues: price outliers spanning orders of magnitude, string-encoded numeric fields ("3.5 Turbo" in engine volume, "24000 KM" in mileage), high-cardinality columns with rare categories, 313 duplicate rows, and substantial missing values in the Levy column. The prediction target (price in GEL) itself had extreme outliers requiring deliberate treatment strategy.',
