@@ -98,7 +98,7 @@ export default function Achievements() {
                       </p>
                       {item.link && (
                         <a
-                          href={item.link}
+                          href={item.id === 'ncut-review' ? import.meta.env.BASE_URL + 'ncut-report.pdf' : item.link}
                           target="_blank"
                           rel="noopener noreferrer"
                           id={`achievement-link-${item.id}`}

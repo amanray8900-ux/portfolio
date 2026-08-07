@@ -142,7 +142,7 @@ export default function Hero() {
             <div className="profile-border w-64 h-64 sm:w-72 sm:h-72">
               <div className="w-full h-full rounded-full overflow-hidden bg-surface">
                 <img
-                  src="/profile.jpeg"
+                  src={import.meta.env.BASE_URL + 'profile.jpeg'}
                   alt="Aman Ray"
                   className="w-full h-full object-cover object-top brightness-90"
                   style={{ imageOrientation: 'from-image' }}

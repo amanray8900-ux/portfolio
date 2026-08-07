@@ -34,7 +34,7 @@ export default function AcademicResearch() {
                     </p>
                   </div>
                   <a
-                    href="/ncut-report.pdf"
+                    href={import.meta.env.BASE_URL + 'ncut-report.pdf'}
                     target="_blank"
                     rel="noopener noreferrer"
                     id="research-report-link"

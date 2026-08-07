@@ -83,7 +83,7 @@ export default function Navbar() {
           {/* Resume Button + Hamburger */}
           <div className="flex items-center gap-3">
             <a
-              href="/resume.pdf"
+              href={import.meta.env.BASE_URL + 'resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               id="navbar-resume-btn"
@@ -129,7 +129,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="/resume.pdf"
+              href={import.meta.env.BASE_URL + 'resume.pdf'}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary w-fit mt-4"
